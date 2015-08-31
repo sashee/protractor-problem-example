@@ -1,0 +1,19 @@
+{
+  "name": "protractor-problem-example",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "jasmine-core": "2.3.4",
+    "http-server":"0.8.0"
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -p 8080",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor conf.js"
+  }
+}
