@@ -1,5 +1,5 @@
-describe('angularjs homepage todo list', function() {
-    it('should add a todo', function() {
+describe('protractor.get', function() {
+    it('should work', function() {
         browser.get('/check_login.html');
 
         expect(element(by.id('status')).getText()).toEqual("You are NOT logged in");
